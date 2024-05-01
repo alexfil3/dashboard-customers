@@ -1,0 +1,81 @@
+$primaryBgColor: #FAFBFF;
+$secondaryBgColor: #FFF;
+$titleSpanTextColor: #838383;
+$navTextColor: #9197B3;
+$navItemBgColor: #5932EA;
+$navIconActiveColor: #FFF;
+$hoverTextColor: #FFF;
+$userProfTextColor: #757575;
+$headerTextColor: #16C098;
+$inputBgColor: #FAFBFF;
+$inputPlaceholderColor: #B5B7C0;
+$inputBorderActive: #5932EA;
+$footerTextColor: #B5B7C0;
+$paginationBorderColor: #EEE;
+$paginationBgColor: #F5F5F5;
+$paginationTextColor: #404B52;
+$paginationActiveBgColor: #5932EA;
+$paginationActiveTextColor: #FFF;
+$svgPrimaryFill: #9197B3;
+$svgLogoFill: #000000;
+$searchIconColor: #7E7E7E;
+$iconNextPrevColor: #404b52;
+$tableColNamesColor: #B5B7C0;
+$tableTextColor: #292D32;
+$tableStatusActiveTextColor: #008767;
+$tableStatusActiveBorderColor: #00B087;
+$tableStatusBgActiveColor: rgba(22, 192, 152, 0.38);
+$tableStatusInactiveTextColor: #DF0404;
+$tableStatusInactiveBorderColor: #DF0404;
+$tableStatusBgInactiveColor: #FFC5C5;
+
+$animation: all 300ms ease;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $primaryBgColor;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+input {
+    padding: 0;
+    outline: none;
+}
+
+button {
+    border: none;
+}
+
+.site-wrapper {
+    display: flex;
+    gap: 71px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.svg {
+    width: 24px;
+    height: 24px;
+    fill: $svgPrimaryFill;
+    stroke: $svgPrimaryFill;
+}
+
+@import "./blocks/aside/aside.scss";
+@import "./blocks/main/main.scss"

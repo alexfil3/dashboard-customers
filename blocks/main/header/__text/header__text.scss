@@ -1,0 +1,14 @@
+.header__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.header__title {
+    font-size: 22px;
+    letter-spacing: -0.22px;
+}
+
+.header__text {
+    color: $headerTextColor;
+}

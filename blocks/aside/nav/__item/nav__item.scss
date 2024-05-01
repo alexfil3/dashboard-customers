@@ -1,0 +1,46 @@
+.nav__item {
+    gap: 14px;
+    width: 250px;
+    position: relative;
+    color: $navTextColor;
+    transition: $animation;
+}
+
+.nav__link {
+    display: flex;
+    align-items: center;
+    height: 46px;
+    gap: 14px;
+    padding: 11px;
+    border-radius: 8px;
+    color: $navTextColor;
+    transition: $animation;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    background-color: $navItemBgColor;
+    color: $hoverTextColor;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav__icon {
+    transition: $animation;
+}
+
+.nav__icon-chevron {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 8px;
+    transition: $animation;
+}
+
+.nav__link:hover .nav__icon,
+.nav__link:focus .nav__icon,
+.nav__link:hover .nav__icon-chevron,
+.nav__link:focus .nav__icon-chevron {
+    fill: $navIconActiveColor;
+    stroke: $navIconActiveColor;
+}

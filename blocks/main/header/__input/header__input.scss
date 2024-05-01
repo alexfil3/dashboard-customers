@@ -1,0 +1,34 @@
+.header__input-wrapper {
+    position: relative;
+}
+
+.header__button {
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    height: 24px;
+    background-color: transparent;
+}
+
+.header__icon {
+    stroke: $searchIconColor;
+}
+
+.header__button:hover {
+    cursor: pointer;
+}
+
+.header__input {
+    border-radius: 10px;
+    background-color: $inputBgColor;
+    border: 2px solid transparent;
+    padding: 11px 4px 11px 40px;
+    font-size: 12px;
+    letter-spacing: -0.12px;
+}
+
+.header__input::placeholder {
+    color: $inputPlaceholderColor;
+    font-size: 12px;
+    letter-spacing: -0.12px;
+}

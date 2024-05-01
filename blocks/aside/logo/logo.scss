@@ -1,0 +1,30 @@
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 54px;
+}
+
+.svg__logo {
+    width: 37px;
+    height: 37px;
+    fill: $svgLogoFill;
+}
+
+.logo__title {
+    font-size: 26px;
+    letter-spacing: 0.26px;
+}
+
+.logo__link {
+    display: inline;
+    color: inherit;
+}
+
+.logo__span {
+    color: $titleSpanTextColor;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+    padding-left: 4px;
+}

@@ -1,0 +1,9 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px
+}
+
+@import "./__text/header__text.scss";
+@import "./__input/header__input.scss";

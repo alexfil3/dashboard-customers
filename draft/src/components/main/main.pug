@@ -1,0 +1,41 @@
+- var tableColNames = ["Customer Name", "Company", "Phone Number", "Email", "Country", "Status"];
+
+main.main 
+  p.greeting Hello #{user.name} 👋🏼,
+  .tableWrapper 
+    .searchHeader 
+      .textWrapper 
+        h2.tableTitle All Customers
+        p.membersSpan Active Members
+      .searchWrapper   
+        button.searchButton
+          svg.searchButton__icon 
+            use(href="") 
+        input.input(placeholder="Search") 
+    table
+      thead 
+        tr.tableHead 
+          each name in tableColNames 
+            th.headItem= name
+      tbody  
+       each customer in data 
+        tr
+          td= customer.name 
+          td= customer.company
+          td= customer.phone 
+          td= customer.email 
+          td= customer.country 
+          td= customer.status
+      //- tfoot 
+      //-   tr 
+      //-     td(col-span="5") Amount 
+      //-     td 
+      //-       button Prev
+      //-       ul 
+      //-         li 
+      //-         li 
+      //-         li 
+      //-         li 
+      //-         li 
+      //-         li 
+      //-       button Next

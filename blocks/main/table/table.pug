@@ -1,0 +1,18 @@
+- const colNames = ["Customer Name", "Company", "Phone Number", "Email", "Country", "Status"];
+
+table.table
+  thead.table__head  
+    tr.table__row 
+      each colName in colNames 
+        th.table__head-elem= colName
+  tbody.table__body 
+    each customer in customers 
+      - const isActive = customer.status === "Active";
+      tr.table__row 
+        td.table__cell= customer.name
+        td.table__cell= customer.company
+        td.table__cell= customer.phone
+        td.table__cell= customer.email
+        td.table__cell= customer.country
+        td.table__cell
+          .table__status(class=`${isActive ? "table__status_theme_active" : "table__status_theme_inactive"}`)= customer.status

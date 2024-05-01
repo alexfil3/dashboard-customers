@@ -1,0 +1,8 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@import "./__text/footer__text.scss";
+@import "./__pagination/footer__pagination.scss";

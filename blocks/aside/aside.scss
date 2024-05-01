@@ -1,0 +1,9 @@
+.aside {
+    padding: 36px 28px 76px;
+    background-color: $secondaryBgColor;
+    box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.50);
+}
+
+@import "./logo/logo.scss";
+@import "./nav/nav.scss";
+@import "./user-card/user-card.scss";

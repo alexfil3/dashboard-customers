@@ -1,0 +1,52 @@
+.table {
+    display: grid;
+    width: 100%;
+    grid-template: repeat(9, 70px) / repeat(6, auto);
+    place-items: center start;
+    margin-bottom: 30px;
+}
+
+.table__head,
+.table__body,
+.table__row {
+    display:contents;
+}
+
+.table__head-elem {
+    color: $tableColNamesColor;
+    font-weight: 500;
+}
+
+.table__head-elem:last-child {
+    justify-self: center;
+}
+
+.table__cell {
+    color: $tableTextColor;
+    font-weight: 500;
+}
+
+.table__cell:last-child {
+    justify-self: center;
+}
+
+.table__status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    border-radius: 4px;
+    padding: 4px 0;
+}
+
+.table__status_theme_active {
+    color: $tableStatusActiveTextColor;
+    border: 1px solid $tableStatusActiveBorderColor;
+    background-color: $tableStatusBgActiveColor;
+}
+
+.table__status_theme_inactive {
+    color: $tableStatusInactiveTextColor;
+    border: 1px solid $tableStatusInactiveBorderColor;
+    background-color: $tableStatusBgInactiveColor;
+}

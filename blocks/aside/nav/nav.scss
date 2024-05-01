@@ -1,0 +1,11 @@
+.nav {
+    margin-bottom: 586px;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+@import "./__item/nav__item.scss";

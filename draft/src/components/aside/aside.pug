@@ -1,0 +1,25 @@
+- var menuItems = ["Dashboard", "Product", "Customers", "Income", "Promote", "Help"];
+
+aside.aside 
+  .titleWrapper
+    svg.svg 
+      use(href="") 
+    h1.title Dashboard
+      span.span v.01
+  nav 
+    ul.list 
+      each item in menuItems
+        li.listItem
+          .itemWrapper 
+            svg.svgItem 
+              use(href="")
+            a= item
+          svg.svgNext
+            use(href="")
+  .user 
+    .img 
+      img(src="../../../user/user.jpg", alt="user.name")
+    .contentWrapper 
+      p.name= user.name 
+      p.profession= user.profession
+        

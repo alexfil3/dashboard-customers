@@ -1,0 +1,15 @@
+.user-card {
+    display: flex;
+    gap: 12px;
+}
+
+.user-card__name {
+    font-weight: 500;
+    letter-spacing: 0.14px;
+}
+
+.user-card__profession {
+    color: $userProfTextColor;
+    font-size: 12px;
+    letter-spacing: 0.12px;
+}

@@ -1,0 +1,19 @@
+.footer__pagination
+  button.footer__button  
+    svg.footer__svg 
+      use(href="../../../../sprite.svg#icon-prev")
+  ul.footer__list  
+    while num < pages
+      if (num < 5) 
+        - points = (num % 4 === 0);
+        li.footer__item
+          button.footer__button= num
+        if (points)
+          button.footer__button-points #{"..."}
+      else if (num === 40)
+        li.footer__item
+          button.footer__button= num
+      - num++
+  button.footer__button
+    svg.footer__svg 
+      use(href="../../../../sprite.svg#icon-next")
