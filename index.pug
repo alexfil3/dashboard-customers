@@ -3,6 +3,7 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="format-detection" content="telephone=no")
         link(href="style.css", rel="stylesheet")
         link(href="https://fonts.googleapis.com", rel="preconnect")
         link(href="https://fonts.gstatic.com", rel="preconnect", crossorigin)
@@ -10,7 +11,10 @@ html(lang="en")
         title Dashboard
     body 
       .site-wrapper
-        include blocks/aside/aside.pug
-        include blocks/main/main.pug
+        include mob-blocks/header/header.pug
+        include mob-blocks/menu/menu.pug
+        include desk-blocks/aside/aside.pug
+        include desk-blocks/main/main.pug
+      script(src="./mob-blocks/menu/menu.js")
         
         

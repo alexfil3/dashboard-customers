@@ -1,5 +1,7 @@
 .main {
     padding: 41px 95px 0px 0px;
+    // temporary decision to hide a main block
+    // display: none;
 }
 
 .customers-wrapper {
@@ -11,6 +13,6 @@
 }
 
 @import "./greeting/greeting.scss";
-@import "./header/header.scss";
+@import "./__header/main__header.scss";
 @import "./table/table.scss";
 @import "./footer/footer.scss";

@@ -1,0 +1,9 @@
+@import "../../../common-blocks/nav/nav.scss";
+
+@media screen and (max-width: 425px) {
+    .nav {
+        margin-bottom: 40px; 
+    }
+}
+
+@import "./__item/nav__item.scss";

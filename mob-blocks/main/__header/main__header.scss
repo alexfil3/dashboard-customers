@@ -1,0 +1,12 @@
+@media screen and (max-width: 426px) {
+    .customers-wrapper {
+        width: 100%;
+    }
+
+    .main__header {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@import "./__text/header__text.scss";

@@ -2,7 +2,7 @@
     position: relative;
 }
 
-.header__button {
+.header-search__button {
     position: absolute;
     top: 7px;
     left: 8px;
@@ -10,7 +10,7 @@
     background-color: transparent;
 }
 
-.header__icon {
+.header__icon_search {
     stroke: $searchIconColor;
 }
 

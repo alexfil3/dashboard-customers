@@ -77,5 +77,8 @@ button {
     stroke: $svgPrimaryFill;
 }
 
-@import "./blocks/aside/aside.scss";
-@import "./blocks/main/main.scss"
+@import "./mob-blocks/header/header.scss";
+@import "./desk-blocks/aside/aside.scss";
+@import "./desk-blocks/main/main.scss";
+@import "./mob-blocks/menu/menu.scss";
+@import "./mob-blocks/main/main.scss";

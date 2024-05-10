@@ -1,0 +1,9 @@
+@media screen and (max-width: 426px) {
+    .main {
+        padding: 64px 7px 0 7px;
+        width: 100%;
+    }
+}
+
+@import "./__header/main__header.scss";
+@import "./footer/footer.scss";
