@@ -44,41 +44,12 @@ button {
   stroke: #9197B3;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.svg__logo {
-  width: 37px;
-  height: 37px;
-  fill: #000000;
-}
-
-.logo__title {
-  font-size: 26px;
-  letter-spacing: 0.26px;
-}
-
-.logo__link {
-  display: inline;
-  color: inherit;
-}
-
-.logo__span {
-  color: #838383;
-  font-size: 10px;
-  font-weight: 400;
-  letter-spacing: -0.1px;
-  padding-left: 4px;
-}
-
 .header {
   position: fixed;
   display: flex;
   padding: 0 16px;
   align-items: center;
+  z-index: 1;
   justify-content: space-between;
   width: 100%;
   height: 58px;
@@ -313,6 +284,7 @@ button {
   grid-template: repeat(9, 70px)/repeat(6, auto);
   place-items: center start;
   margin-bottom: 30px;
+  width: 886px;
 }
 
 .table__head,
@@ -385,6 +357,7 @@ button {
 .footer__button-points {
   background-color: transparent;
   cursor: pointer;
+  color: #404B52;
 }
 
 .footer__button {
@@ -444,59 +417,6 @@ button {
     display: none;
   }
 }
-.nav__list {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.nav__item {
-  gap: 14px;
-  width: 250px;
-  position: relative;
-  color: #9197B3;
-  transition: all 300ms ease;
-}
-
-.nav__link {
-  display: flex;
-  align-items: center;
-  height: 46px;
-  gap: 14px;
-  padding: 11px;
-  border-radius: 8px;
-  color: #9197B3;
-  transition: all 300ms ease;
-}
-
-.nav__link:hover,
-.nav__link:focus {
-  background-color: #5932EA;
-  color: #FFF;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.nav__icon {
-  transition: all 300ms ease;
-}
-
-.nav__icon-chevron {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  right: 8px;
-  transition: all 300ms ease;
-}
-
-.nav__link:hover .nav__icon,
-.nav__link:focus .nav__icon,
-.nav__link:hover .nav__icon-chevron,
-.nav__link:focus .nav__icon-chevron {
-  fill: #FFF;
-  stroke: #FFF;
-}
-
 @media screen and (max-width: 425px) {
   .nav {
     margin-bottom: 40px;
@@ -532,6 +452,11 @@ button {
   .footer {
     flex-direction: column;
     gap: 8px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .table-overflow {
+    overflow: scroll;
   }
 }
 
