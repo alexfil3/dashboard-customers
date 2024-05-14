@@ -77,6 +77,10 @@ button {
     stroke: $svgPrimaryFill;
 }
 
+.scroll-off {
+    overflow: hidden;
+}
+
 @import "./mob-blocks/header/header.scss";
 @import "./desk-blocks/aside/aside.scss";
 @import "./desk-blocks/main/main.scss";

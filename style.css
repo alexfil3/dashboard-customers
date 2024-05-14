@@ -44,6 +44,10 @@ button {
   stroke: #9197B3;
 }
 
+.scroll-off {
+  overflow: hidden;
+}
+
 .header {
   position: fixed;
   display: flex;
